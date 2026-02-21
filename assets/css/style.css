@@ -219,3 +219,67 @@ body {
 .footer-links a:hover {
   color: var(--gold);
 }
+/* ===== PROJECTS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(14px);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-12px) rotateX(2deg) rotateY(-2deg);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.18);
+}
+
+.project-impact {
+  margin-top: 16px;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.skill-bar {
+  background: var(--silver);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.skill-bar span {
+  display: block;
+  height: 8px;
+  background: linear-gradient(90deg, var(--gold), #e6c36a);
+  width: 0;
+  animation: fillBar 1.6s ease forwards;
+}
+
+@keyframes fillBar {
+  to { width: inherit; }
+}
