@@ -283,8 +283,6 @@ body {
 @keyframes fillBar {
   to { width: inherit; }
 }
-/* ===== MOBILE NAV FIX ===== */
-
 /* ===== MOBILE NAV (FIXED) ===== */
 
 .logo {
