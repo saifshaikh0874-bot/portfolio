@@ -6,3 +6,12 @@ document.querySelectorAll(".skill-bar span").forEach(bar => {
     bar.style.width = width;
   }, 300);
 });
+// Mobile menu toggle
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+if (menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+}
